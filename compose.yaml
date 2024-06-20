@@ -1,6 +1,6 @@
 services:
   vue:
     build:
-      dockerfile: ./my-trello/Dockerfile
+      dockerfile: Dockerfile
     ports:
       - "8080:80"
