@@ -1,8 +1,11 @@
-# Node.jsの公式イメージをベースにする
-FROM node:14-alpine
+# ubuntuの公式イメージをベースにする
+FROM ubuntu
 
 # 必要なパッケージのインストール
 RUN apk add --no-cache git
+
+# nodejsとnpmのインストール
+RUN apt install -y nodejs npm
 
 # Vue CLIのインストール
 RUN npm install -g @vue/cli
