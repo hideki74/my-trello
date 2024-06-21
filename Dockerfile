@@ -2,10 +2,11 @@
 FROM ubuntu
 
 # 必要なパッケージのインストール
-RUN apk add --no-cache git
+# RUN apk add --no-cache git
 
 # nodejsとnpmのインストール
-RUN apt install -y nodejs npm
+RUN apt update && \
+    apt install -y nodejs npm
 
 # Vue CLIのインストール
 RUN npm install -g @vue/cli
