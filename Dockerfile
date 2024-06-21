@@ -20,9 +20,6 @@ COPY package*.json ./
 # 依存パッケージのインストール
 RUN npm install
 
-# ソースコードのコピー
-COPY . .
-
 # ポートの設定
 EXPOSE 8080
 
